@@ -6,8 +6,6 @@ fon_g <-function(x, a){
 
 
 fun_y <- function(x, a, b){
-  x <- seq(0, 3, 0.01)
-  
   y = fon_g(x, a) + b*rnorm(length(x), 0, 1)
   return(y)
 }
@@ -19,13 +17,12 @@ data_f<-data.frame(data )
 
 # fonction de cout f
 fonc_f <-  function(x, y, a){
-  for(i in 1:length(x)){
-    f <-0
-    f[i+1] <- f[i] +  0.5*sum(y[i]- exp(-a*x[i]) )^2
+   f = sum (( y - exp(-a * x))^2)
     return(f)
-  }
+
 }
 fonc_f(x, y, a)
+
 
 # fonction de grad
 
