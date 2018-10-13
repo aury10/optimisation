@@ -15,3 +15,7 @@ fon_g <-function(a, x){
 x = list(rep(0, 10))
 y = list(rep(0, 10))
 
+############## JE T'AIME
+
+## PAS
+
